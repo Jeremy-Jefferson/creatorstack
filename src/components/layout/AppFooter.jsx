@@ -15,7 +15,7 @@ export default function AppFooter() {
               href="https://linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#6FE7E0] hover:text-[#6FE7E0]/80 transition-colors"
+              className="text-[#6FE7E0] hover:text-white transition-colors"
               aria-label="LinkedIn"
             >
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -28,7 +28,7 @@ export default function AppFooter() {
               href="https://github.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#6FE7E0] hover:text-[#6FE7E0]/80 transition-colors"
+              className="text-[#6FE7E0] hover:text-white transition-colors"
               aria-label="GitHub"
             >
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

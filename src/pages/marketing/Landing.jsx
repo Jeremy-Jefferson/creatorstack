@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Palette, ShoppingBag, BarChart3, Globe, Zap, Shield, Check, TrendingUp, Package, Users, DollarSign } from 'lucide-react';
 import { Button, Badge } from '../../components/ui';
 import { AppFooter } from '../../components/layout';
+import CreatorStackLockLogo from '../../assets/CreatorStackLock.svg';
 
 const features = [
   {
@@ -169,7 +170,7 @@ export default function Landing() {
       <nav className="border-b border-white/[0.08]">
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <img src="src/assets/CreatorStackLock.svg" alt="Creator Stack" className="h-8 w-auto" />
+            <img src={CreatorStackLockLogo} alt="Creator Stack" className="h-8 w-auto" />
           </div>
           <div className="hidden md:flex items-center gap-8">
             <a href="#features" className="text-sm text-[#7C859A] hover:text-[#A8B0C2] transition-colors">Features</a>

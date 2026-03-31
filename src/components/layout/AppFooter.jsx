@@ -1,3 +1,5 @@
+import CreatorStackLogo from '../../assets/CreatorStack.svg';
+
 export default function AppFooter() {
   return (
     <footer className="border-t border-white/[0.08] py-12">
@@ -5,7 +7,7 @@ export default function AppFooter() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo and Copyright */}
           <div className="flex items-center gap-3">
-            <img src="/src/assets/CreatorStack.svg" className="h-14 w-auto" />
+            <img src={CreatorStackLogo} className="h-14 w-auto" />
             <span className="text-sm text-[#7C859A]">© 2026 CreatorStack. All rights reserved.</span>
           </div>
 

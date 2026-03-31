@@ -4,6 +4,7 @@ import { Mail, Lock, ArrowRight, Loader2 } from 'lucide-react';
 import { Button, Input } from '../../components/ui';
 import { useAuth } from '../../hooks/useAuth';
 import { useToast } from '../../hooks/useToast';
+import CreatorStackLockLogo from '../../assets/CreatorStackLock.svg';
 
 export default function Login() {
   const navigate = useNavigate();
@@ -81,7 +82,7 @@ export default function Login() {
       <div className="hidden lg:flex lg:w-1/2 bg-[#111218] items-center justify-center p-12">
         <div className="max-w-md">
           <div className="flex items-center gap-4">
-            <img src="/src/assets/CreatorStackLock.svg" alt="Creator Stack" className="h-8 w-auto" />
+            <img src={CreatorStackLockLogo} alt="Creator Stack" className="h-8 w-auto" />
           </div>
           <h1 className="text-3xl font-bold text-[#F5F7FB] mb-4">
             Welcome back to your creative studio

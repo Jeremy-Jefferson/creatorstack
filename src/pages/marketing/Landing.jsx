@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, Palette, ShoppingBag, BarChart3, Globe, Zap, Shield, Check, TrendingUp, Package, Users, DollarSign } from 'lucide-react';
+import { ArrowRight, Palette, ShoppingBag, BarChart3, Globe, Zap, Shield, Check } from 'lucide-react';
 import { Button, Badge } from '../../components/ui';
 import { AppFooter } from '../../components/layout';
 import CreatorStackLockLogo from '../../assets/CreatorStackLock.svg';
+import DashboardImage from '../../assets/CREATOR-STACK-DASHBOARD.webp';
 
 const features = [
   {
@@ -68,97 +69,12 @@ const pricingPlans = [
 
 function DashboardMockup() {
   return (
-    <div className="relative max-w-4xl mx-auto mt-16 opacity-90">
-      {/* Browser chrome */}
-      <div className="bg-[#1A1B23] rounded-t-xl border border-white/[0.08] border-b-0 px-4 py-3 flex items-center gap-3">
-        <div className="flex gap-1.5">
-          <div className="w-3 h-3 rounded-full bg-[#FF5F57]" />
-          <div className="w-3 h-3 rounded-full bg-[#FEBC2E]" />
-          <div className="w-3 h-3 rounded-full bg-[#28C840]" />
-        </div>
-        <div className="flex-1 bg-[#0B0B0F] rounded-md px-4 py-1.5 text-xs text-[#7C859A] font-mono">
-          app.creatorstack.io/dashboard
-        </div>
-      </div>
-      
-      {/* Dashboard content */}
-      <div className="bg-[#111218] rounded-b-xl border border-white/[0.08] border-t-0 p-6">
-        <div className="grid grid-cols-4 gap-4 mb-6">
-          {/* Stats cards */}
-          <div className="bg-[#0B0B0F] rounded-lg p-4 border border-white/[0.06]">
-            <div className="flex items-center gap-2 mb-2">
-              <div className="w-8 h-8 rounded-lg bg-[#6FE7E0]/10 flex items-center justify-center">
-                <DollarSign size={16} className="text-[#6FE7E0]" />
-              </div>
-            </div>
-            <div className="text-xl font-bold text-[#F5F7FB]">$12,847</div>
-            <div className="text-xs text-[#7C859A]">Total Revenue</div>
-            <div className="flex items-center gap-1 mt-1">
-              <TrendingUp size={12} className="text-[#22C55E]" />
-              <span className="text-xs text-[#22C55E]">+24%</span>
-            </div>
-          </div>
-          
-          <div className="bg-[#0B0B0F] rounded-lg p-4 border border-white/[0.06]">
-            <div className="flex items-center gap-2 mb-2">
-              <div className="w-8 h-8 rounded-lg bg-[#818CF8]/10 flex items-center justify-center">
-                <Package size={16} className="text-[#818CF8]" />
-              </div>
-            </div>
-            <div className="text-xl font-bold text-[#F5F7FB]">342</div>
-            <div className="text-xs text-[#7C859A]">Orders</div>
-            <div className="flex items-center gap-1 mt-1">
-              <TrendingUp size={12} className="text-[#22C55E]" />
-              <span className="text-xs text-[#22C55E]">+18%</span>
-            </div>
-          </div>
-          
-          <div className="bg-[#0B0B0F] rounded-lg p-4 border border-white/[0.06]">
-            <div className="flex items-center gap-2 mb-2">
-              <div className="w-8 h-8 rounded-lg bg-[#F472B6]/10 flex items-center justify-center">
-                <Users size={16} className="text-[#F472B6]" />
-              </div>
-            </div>
-            <div className="text-xl font-bold text-[#F5F7FB]">1,247</div>
-            <div className="text-xs text-[#7C859A]">Customers</div>
-            <div className="flex items-center gap-1 mt-1">
-              <TrendingUp size={12} className="text-[#22C55E]" />
-              <span className="text-xs text-[#22C55E]">+32%</span>
-            </div>
-          </div>
-          
-          <div className="bg-[#0B0B0F] rounded-lg p-4 border border-white/[0.06]">
-            <div className="flex items-center gap-2 mb-2">
-              <div className="w-8 h-8 rounded-lg bg-[#FBBF24]/10 flex items-center justify-center">
-                <BarChart3 size={16} className="text-[#FBBF24]" />
-              </div>
-            </div>
-            <div className="text-xl font-bold text-[#F5F7FB]">4.8%</div>
-            <div className="text-xs text-[#7C859A]">Conversion</div>
-            <div className="flex items-center gap-1 mt-1">
-              <TrendingUp size={12} className="text-[#22C55E]" />
-              <span className="text-xs text-[#22C55E]">+0.8%</span>
-            </div>
-          </div>
-        </div>
-        
-        {/* Chart area */}
-        <div className="bg-[#0B0B0F] rounded-lg p-4 border border-white/[0.06]">
-          <div className="flex items-center justify-between mb-4">
-            <div className="text-sm font-medium text-[#F5F7FB]">Revenue Overview</div>
-            <div className="text-xs text-[#7C859A]">Last 30 days</div>
-          </div>
-          <div className="flex items-end gap-2 h-24">
-            {[40, 65, 45, 80, 55, 70, 90, 75, 85, 60, 95, 88].map((height, i) => (
-              <div
-                key={i}
-                className="flex-1 bg-gradient-to-t from-[#6FE7E0]/20 to-[#6FE7E0]/40 rounded-t-sm"
-                style={{ height: `${height}%` }}
-              />
-            ))}
-          </div>
-        </div>
-      </div>
+    <div className="relative max-w-4xl mx-auto mt-16">
+      <img
+        src={DashboardImage}
+        alt="CreatorStack Dashboard"
+        className="w-full rounded-xl border border-white/[0.08] shadow-[0_8px_40px_rgba(111,231,224,0.1)]"
+      />
     </div>
   );
 }
